@@ -1,3 +1,6 @@
+# Advent of Code 2023 - Day 2 - Part 2 - https://adventofcode.com/2023/day/2#part2
+# Date: 24/04/2024
+
 INPUT_FILE = "input"
 
 

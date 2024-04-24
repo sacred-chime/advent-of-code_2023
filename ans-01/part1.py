@@ -1,4 +1,4 @@
-# Advent of Code 2023 - Day 1 - Part 1 - https://adventofcode.com/2023/day/1#part2
+# Advent of Code 2023 - Day 1 - Part 1 - https://adventofcode.com/2023/day/1#part1
 # Date: 24/04/2024
 
 INPUT_FILE = "input"
