@@ -22,7 +22,7 @@ def get_first_valid_digit_in_block(block: str) -> int:
     return -1
 
 
-def main():
+def main() -> int:
     answers = []
 
     with open(INPUT_FILE) as f:

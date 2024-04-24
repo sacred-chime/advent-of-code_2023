@@ -4,7 +4,7 @@
 INPUT_FILE = "input"
 
 
-def main():
+def main() -> int:
     answers = []
 
     with open(INPUT_FILE) as f:
