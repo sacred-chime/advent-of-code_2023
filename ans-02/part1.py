@@ -5,7 +5,7 @@ MAX_GREEN = 13
 MAX_BLUE = 14
 
 
-def parse_line(line):
+def parse_line(line: str) -> tuple[int, list]:
     title, games = line.split(":")
 
     game_number = int(title.split(" ")[1])
@@ -23,7 +23,7 @@ def parse_line(line):
     return game_number, parsed_scores
 
 
-def is_possible_game(scores):
+def is_possible_game(scores: list) -> bool:
     for score in scores:
         if score.get("red", None) and score["red"] > MAX_RED:
             return False
@@ -34,7 +34,7 @@ def is_possible_game(scores):
     return True
 
 
-def main():
+def main() -> int:
     total = 0
 
     with open(INPUT_FILE) as f:

@@ -1,7 +1,7 @@
-INPUT_FILE = "input_test"
+INPUT_FILE = "input"
 
 
-def parse_line(line):
+def parse_line(line: str) -> tuple[int, list]:
     title, games = line.split(":")
 
     game_number = int(title.split(" ")[1])
@@ -19,7 +19,7 @@ def parse_line(line):
     return game_number, parsed_scores
 
 
-def get_fewest_cubes(scores):
+def get_fewest_cubes(scores: list) -> dict:
     fewest_cubes = {"red": 0, "green": 0, "blue": 0}
 
     for score in scores:
@@ -35,7 +35,7 @@ def get_fewest_cubes(scores):
     return fewest_cubes
 
 
-def main():
+def main() -> int:
     total = 0
 
     with open(INPUT_FILE) as f:
